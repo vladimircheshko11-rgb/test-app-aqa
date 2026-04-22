@@ -4,7 +4,11 @@ https://qavajs.github.io/docs/intro
 
 ## POM ↔ Feature mapping
 - `features/docs-intro.feature` → `page_object/QavaDocsIntroPage.js`
-  - verifies "What's new in v2" link and "Steps" dropdown contents on QavaJS docs intro page
+  - Business intent: ensure users can find "What's new in v2" and validate the list of Step packages
+  - Technical mapping:
+    - "What's new in v2" link checks → `QavaDocsIntroPage.WhatsNewInV2Link` and `QavaDocsIntroPage.openWhatsNewInV2()`
+    - "Steps" dropdown checks → `QavaDocsIntroPage.StepsDropdownToggle`, `QavaDocsIntroPage.expandStepsDropdown()`
+    - Package list checks → `QavaDocsIntroPage.getStepsPackageNames()` / `QavaDocsIntroPage.stepsPackageLink(name)`
 
 ## Install Modules
 ```bash
