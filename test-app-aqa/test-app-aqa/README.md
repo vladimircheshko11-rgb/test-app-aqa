@@ -1,6 +1,11 @@
 # qavajs
 ## Docs
 https://qavajs.github.io/docs/intro
+
+## POM ↔ Feature mapping
+- `features/docs-intro.feature` → `page_object/QavaDocsIntroPage.js`
+  - verifies "What's new in v2" link and "Steps" dropdown contents on QavaJS docs intro page
+
 ## Install Modules
 ```bash
 npm install
